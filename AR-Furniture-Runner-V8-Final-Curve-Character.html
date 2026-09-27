@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#241126">
+<title>AR FURNITURE SUKLI LORMI | Premium Furniture</title>
+<meta name="description" content="AR FURNITURE SUKLI LORMI — बेड, दीवान, टी-टेबल, सोफ़ा सेट, दरवाजा, चौखट और ऑर्डर पर फर्नीचर निर्माण एवं रिपेयरिंग।">
+<style>
+:root{
+  --maroon:#4b1027; --purple:#241126; --gold:#d7ad57; --cream:#f8f0df;
+  --ink:#17131a; --muted:#716a70; --white:#fff; --card:#fffaf2;
+  --shadow:0 18px 55px rgba(36,17,38,.14); --radius:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Noto Sans Devanagari","Segoe UI",sans-serif;color:var(--ink);background:#fcfaf6;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(36,17,38,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(215,173,87,.18)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-mark{width:42px;height:42px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-weight:900;color:var(--gold);letter-spacing:-1px}
+.brand strong{font-size:15px;letter-spacing:1.1px}.brand small{display:block;color:#d8cfd5;font-size:10px;letter-spacing:2px}
+.navlinks{display:flex;gap:22px;color:#eee;font-size:14px}
+.navlinks a:hover{color:var(--gold)}
+.hero{min-height:690px;display:grid;place-items:center;position:relative;overflow:hidden;color:white;background:
+ radial-gradient(circle at 80% 20%,rgba(215,173,87,.2),transparent 28%),
+ radial-gradient(circle at 15% 80%,rgba(117,48,95,.28),transparent 30%),
+ linear-gradient(135deg,#241126,#4b1027 55%,#27152d)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.18),transparent 60%)}
+.hero-inner{position:relative;z-index:1;padding:90px 0;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:55px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--gold);font-weight:700;letter-spacing:2px;font-size:12px;text-transform:uppercase;margin-bottom:18px}
+.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}
+h1{font-size:clamp(42px,7vw,78px);line-height:1.03;letter-spacing:-2px;margin-bottom:20px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#eee2e8;max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;font-weight:800;font-size:14px;border:1px solid transparent;transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#261426}.btn-outline{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.05)}
+.hero-card{min-height:390px;border:1px solid rgba(215,173,87,.3);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.03));box-shadow:0 30px 80px rgba(0,0,0,.25);display:grid;place-items:center;padding:30px;position:relative}
+.hero-card:after{content:"";position:absolute;inset:18px;border:1px solid rgba(215,173,87,.18);border-radius:24px}
+.logo-big{position:relative;z-index:2;text-align:center}.logo-big .ar{font-size:86px;font-weight:950;letter-spacing:-8px;color:var(--gold);line-height:.9}.logo-big .name{font-size:17px;letter-spacing:4px;font-weight:800}.logo-big .sub{font-size:11px;letter-spacing:3px;color:#d7c9d0;margin-top:8px}
+section{padding:92px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.kicker{color:#8e6b2c;font-weight:800;letter-spacing:2px;font-size:11px;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:9px 0 12px;color:var(--purple)}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid #eee3d4;border-radius:var(--radius);padding:28px;box-shadow:0 10px 35px rgba(36,17,38,.06);transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.icon{width:52px;height:52px;border-radius:16px;background:#f0e1c4;color:#7d5b20;display:grid;place-items:center;font-size:24px;margin-bottom:18px}.card h3{font-size:20px;color:var(--purple);margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.products{background:#f3ecdf}.product{overflow:hidden;padding:0}.product .ph{height:190px;background:linear-gradient(135deg,#5a2940,#28162d);display:grid;place-items:center;color:var(--gold);font-size:58px}.product .body{padding:22px}.product .body h3{margin-bottom:5px}.tag{display:inline-block;margin-top:10px;font-size:11px;font-weight:800;color:#765620;background:#f1e1bd;padding:5px 9px;border-radius:999px}
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}.showbox{border-radius:28px;padding:38px;background:linear-gradient(145deg,#241126,#4b1027);color:#fff;box-shadow:var(--shadow)}.showbox h3{font-size:30px;line-height:1.2;margin:10px 0 13px}.showbox p{color:#e7dce2}.list{margin-top:22px;display:grid;gap:11px}.list div{display:flex;gap:10px;align-items:flex-start;color:#f5e9ef}.card .list div{color:var(--muted)}.check{color:var(--gold);font-weight:900}
+.contact{background:var(--purple);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d9cbd2}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-card{border:1px solid rgba(215,173,87,.25);border-radius:22px;padding:25px;background:rgba(255,255,255,.05)}.contact-card .mini{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:1px}.contact-card strong{display:block;font-size:19px;margin:6px 0 14px}.contact-card .btn{width:100%}
+.map{margin-top:22px;text-align:center}.map a{display:inline-flex}
+footer{padding:28px 0;background:#170b1c;color:#bfb1ba;text-align:center;font-size:12px}.footer-brand{color:var(--gold);font-weight:900;letter-spacing:2px;margin-bottom:5px}
+@media(max-width:850px){.navlinks{display:none}.hero{min-height:auto}.hero-inner{grid-template-columns:1fr;padding:70px 0 80px;gap:35px}.hero-card{min-height:280px}.logo-big .ar{font-size:70px}.grid{grid-template-columns:1fr 1fr}.showcase{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:560px){section{padding:70px 0}.grid{grid-template-columns:1fr}h1{font-size:47px}.hero p{font-size:16px}.actions .btn{width:100%}.brand strong{font-size:13px}.brand small{font-size:8px}}
+
+/* === AR FURNITURE RUNNER — ADD-ON ONLY === */
+.game-section{background:linear-gradient(180deg,#f3ecdf 0%,#fcfaf6 100%);overflow:hidden}
+.game-shell{max-width:980px;margin:auto}
+.game-panel{background:linear-gradient(145deg,#241126,#4b1027);border:1px solid rgba(215,173,87,.28);border-radius:30px;padding:18px;box-shadow:0 22px 65px rgba(36,17,38,.18)}
+.game-top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:4px 5px 14px;color:#fff}
+.game-stat{font-size:11px;letter-spacing:1.5px;color:#d8cfd5;font-weight:800}
+.game-stat strong{display:block;color:var(--gold);font-size:22px;letter-spacing:1px;line-height:1.1;margin-top:3px}
+.game-stat:last-child{text-align:right}
+.game-target{text-align:center;color:#fff;font-size:11px;line-height:1.4}
+.game-target b{color:var(--gold);font-size:12px}
+.game-stage-wrap{position:relative;border:1px solid rgba(215,173,87,.24);border-radius:22px;overflow:hidden;background:#32172e}
+.game-stage-wrap:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#2d1730 0%,#4a2740 58%,#d3ad60 58%,#d3ad60 100%);opacity:.95;pointer-events:none}
+#arFurnitureGame{display:block;width:100%;height:280px;aspect-ratio:auto;min-height:0;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;outline:none;position:relative;z-index:1;background:transparent}
+.game-pause-btn{position:absolute;right:12px;top:12px;z-index:7;border:1px solid rgba(255,255,255,.28);background:rgba(36,17,38,.78);backdrop-filter:blur(6px);color:#fff;border-radius:999px;padding:9px 13px;font:800 11px inherit;letter-spacing:.5px;cursor:pointer;display:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.game-pause-btn.show{display:inline-flex;align-items:center;gap:5px}.game-pause-btn:hover{transform:translateY(-1px)}
+.game-overlay{position:absolute;inset:0;z-index:5;display:grid;place-items:center;background:rgba(36,17,38,.48);backdrop-filter:blur(2px);padding:20px;text-align:center;color:#fff}
+.game-overlay.hidden{display:none}
+.game-overlay-box{max-width:430px;border:1px solid rgba(215,173,87,.35);border-radius:22px;padding:22px;background:rgba(36,17,38,.88);box-shadow:0 18px 45px rgba(0,0,0,.25)}
+.game-overlay h3{color:var(--gold);font-size:25px;margin-bottom:6px}
+.game-overlay p{color:#eadfe5;font-size:13px}
+.game-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:15px}
+.game-btn{border:0;cursor:pointer;font:inherit;display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;font-weight:900;font-size:13px;background:var(--gold);color:#261426;box-shadow:0 8px 20px rgba(0,0,0,.16);transition:.2s}
+.game-btn:hover{transform:translateY(-2px)}
+.game-btn.secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff}
+.game-rewards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.game-reward{border:1px solid rgba(215,173,87,.22);border-radius:18px;padding:13px 15px;background:rgba(255,255,255,.055);color:#fff}
+.game-reward span{display:block;font-size:10px;letter-spacing:1px;color:#cfc0c8;font-weight:800}
+.game-reward b{display:block;margin-top:3px;color:var(--gold);font-size:17px}
+.game-note{margin-top:13px;text-align:center;color:#756c72;font-size:11px}
+.game-toast{z-index:6;position:absolute;left:50%;top:16px;transform:translateX(-50%) translateY(-10px);opacity:0;pointer-events:none;z-index:4;white-space:nowrap;background:rgba(36,17,38,.92);border:1px solid rgba(215,173,87,.4);color:#fff;padding:9px 14px;border-radius:999px;font-size:12px;font-weight:900;transition:.25s}
+.game-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:560px){
+  .game-panel{padding:12px;border-radius:24px}
+  .game-top{grid-template-columns:1fr 1fr;gap:8px}
+  .game-target{grid-column:1/-1;grid-row:2}
+  .game-stat strong{font-size:19px}
+  #arFurnitureGame{height:300px;min-height:0}
+  .game-rewards{grid-template-columns:1fr}
+  .game-overlay-box{padding:18px}
+}
+
+</style>
+<style>
+.reward-banner{margin:0 auto 14px;padding:16px 14px 15px;border:1px solid rgba(218,175,82,.58);border-radius:14px;background:linear-gradient(145deg,rgba(17,17,17,.98),rgba(39,31,20,.96));box-shadow:0 12px 34px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.08);text-align:center}
+.reward-banner.hidden{display:none}.reward-kicker{font-size:12px;letter-spacing:2px;font-weight:900;margin-bottom:6px}.reward-shop{font-size:14px;font-weight:900;letter-spacing:.4px;margin-bottom:10px}.reward-main{font-size:clamp(20px,4vw,30px);font-weight:1000;letter-spacing:.6px}.reward-score{margin-top:6px;font-weight:800;font-variant-numeric:tabular-nums}.reward-note{margin-top:8px;font-size:12px;opacity:.82}.new-best{animation:bestPulse .55s ease-in-out 2}@keyframes bestPulse{50%{transform:scale(1.07);opacity:.72}}
+</style>
+<style>
+.live-reward{position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:8;width:min(86%,460px);
+padding:13px 16px 12px;border:1px solid rgba(218,175,82,.62);border-radius:15px;
+background:linear-gradient(145deg,rgba(27,15,28,.97),rgba(63,30,47,.96));
+box-shadow:0 12px 30px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.07);
+text-align:center;pointer-events:none;animation:rewardIn .35s ease-out}
+.live-reward.hidden{display:none}
+.live-reward-kicker{font-size:11px;letter-spacing:1.8px;font-weight:900}
+.live-reward-shop{font-size:13px;font-weight:900;letter-spacing:.35px;margin-top:3px}
+.live-reward-main{font-size:clamp(19px,4vw,28px);font-weight:1000;margin-top:5px;letter-spacing:.5px}
+.live-reward-score{font-size:13px;font-weight:800;margin-top:2px}
+.live-reward-note{font-size:11px;opacity:.82;margin-top:4px}
+@keyframes rewardIn{from{opacity:0;transform:translateX(-50%) translateY(-12px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="AR FURNITURE SUKLI LORMI">
+      <div class="brand-mark">AR</div>
+      <div><strong>AR FURNITURE</strong><small>SUKLI LORMI</small></div>
+    </a>
+    <nav class="navlinks">
+      <a href="#products">Products</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div>
+      <div class="eyebrow">Premium Furniture • Custom Work</div>
+      <h1>आपके घर के लिए<br><span>बेहतरीन फर्नीचर</span></h1>
+      <p>ऑर्डर पर तैयार किया गया फर्नीचर, खूबसूरत डिज़ाइन और फर्नीचर संबंधित रिपेयरिंग कार्य — भरोसे के साथ।</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="tel:+919131580774">☎ Call Now</a>
+        <a class="btn btn-outline" href="https://wa.me/918349364830?text=Namaste%20AR%20FURNITURE%20SUKLI%20LORMI%2C%20mujhe%20furniture%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/EAdUTWwkfRXgkojf9?g_st=ac" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="logo-big"><div class="ar">AR</div><div class="name">FURNITURE</div><div class="sub">SUKLI • LORMI</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Our Collection</div><h2>हमारे फर्नीचर</h2><p>घर की जरूरत और आपकी पसंद के अनुसार गुणवत्तापूर्ण फर्नीचर तैयार किया जाता है।</p></div>
+    <div class="grid">
+      <article class="card product"><div class="ph">🛏</div><div class="body"><h3>बेड</h3><p>मजबूत और आकर्षक डिज़ाइन में ऑर्डर पर तैयार बेड।</p><span class="tag">Custom Order</span></div></article>
+      <article class="card product"><div class="ph">🛋</div><div class="body"><h3>सोफ़ा सेट</h3><p>घर के इंटीरियर के अनुरूप सुंदर और आरामदायक विकल्प।</p><span class="tag">Custom Order</span></div></article>
+      <article class="card product"><div class="ph">◫</div><div class="body"><h3>दीवान</h3><p>उपयोगी, स्टाइलिश और मजबूत दीवान निर्माण।</p><span class="tag">Custom Order</span></div></article>
+      <article class="card product"><div class="ph">☕</div><div class="body"><h3>टी-टेबल</h3><p>कॉम्पैक्ट से लेकर प्रीमियम डिज़ाइन तक।</p><span class="tag">Custom Order</span></div></article>
+      <article class="card product"><div class="ph">▣</div><div class="body"><h3>खिड़की • चौखट</h3><p>इमारती लकड़ी से ऑर्डर पर तैयार किया जाता है।</p><span class="tag">Custom Order</span></div></article>
+      <article class="card product"><div class="ph">🚪</div><div class="body"><h3>दरवाजा</h3><p>लेमिनेशन डोर, माइका डोर और पाइन डोर उपलब्ध।</p><span class="tag">Available</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="kicker">What We Do</div><h2>सेवाएँ</h2><p>फर्नीचर निर्माण से लेकर संबंधित रिपेयरिंग कार्य तक।</p></div>
+    <div class="showcase">
+      <div class="showbox">
+        <div class="kicker">Custom Furniture</div><h3>ऑर्डर पर फर्नीचर निर्माण</h3>
+        <p>आपकी जरूरत, जगह और पसंद के अनुसार फर्नीचर तैयार करने की सुविधा।</p>
+        <div class="list">
+          <div><span class="check">✓</span> बेड, दीवान और टी-टेबल</div>
+          <div><span class="check">✓</span> सोफ़ा सेट, खिड़की और चौखट</div>
+          <div><span class="check">✓</span> दरवाजा एवं अन्य फर्नीचर कार्य</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">🔧</div><h3>Furniture Repairing</h3>
+        <p>फर्नीचर संबंधित सभी रिपेयरिंग कार्य किया जाता है।</p>
+        <div class="list" style="color:#5b4d55"><div><span class="check">✓</span> मरम्मत एवं सुधार</div><div><span class="check">✓</span> फर्नीचर की उपयोगिता बेहतर करने के कार्य</div><div><span class="check">✓</span> काम के अनुसार समाधान</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="background:#fff">
+  <div class="container">
+    <div class="section-head"><div class="kicker">About AR Furniture</div><h2>विश्वास के साथ फर्नीचर</h2><p>AR FURNITURE SUKLI LORMI में गुणवत्ता, मजबूत निर्माण और ग्राहक की जरूरत के अनुरूप काम पर ध्यान दिया जाता है।</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">✦</div><h3>कस्टम डिज़ाइन</h3><p>आपकी जरूरत और पसंद के अनुसार ऑर्डर पर निर्माण।</p></div>
+      <div class="card"><div class="icon">◆</div><h3>इमारती लकड़ी</h3><p>साल, सागौन इत्यादि इमारती लकड़ी से ऑर्डर पर बनाए जाते हैं।</p></div>
+      <div class="card"><div class="icon">✓</div><h3>उचित मूल्य</h3><p>लेमिनेशन डोर, माइका डोर और पाइन डोर उचित मूल्य पर उपलब्ध हैं।</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Get In Touch</div><h2>संपर्क करें</h2><p>फर्नीचर या रिपेयरिंग कार्य के लिए सीधे संपर्क करें।</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><div class="mini">CALL</div><strong>9131580774</strong><a class="btn btn-gold" href="tel:+919131580774">☎ अभी कॉल करें</a></div>
+      <div class="contact-card"><div class="mini">WHATSAPP</div><strong>8349364830</strong><a class="btn btn-gold" href="https://wa.me/918349364830?text=Namaste%20AR%20FURNITURE%20SUKLI%20LORMI%2C%20mujhe%20furniture%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">💬 WhatsApp करें</a></div>
+      <div class="contact-card"><div class="mini">LOCATION</div><strong>सुकली, लोरमी</strong><a class="btn btn-gold" href="https://maps.app.goo.gl/EAdUTWwkfRXgkojf9?g_st=ac" target="_blank" rel="noopener">📍 Maps में देखें</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="game-section" id="game">
+  <div class="container game-shell">
+    <div class="section-head">
+      <div class="kicker">AR Furniture Challenge</div>
+      <h2>🎮 AR Furniture Runner</h2>
+      <p>जितना score बढ़ेगा, game उतना ही तेज़ और challenging होता जाएगा।</p>
+    </div>
+
+    <div class="game-panel">
+      <div class="game-top">
+        <div class="game-stat">SCORE<strong id="gameScore">00000</strong></div>
+        <div class="game-target">NEXT REWARD<br><b id="nextReward">5,000 → 1% OFF</b></div>
+        <div class="game-stat">BEST<strong id="gameBest">00000</strong></div>
+      </div>
+
+      <div class="game-stage-wrap" id="gameStage">
+        <canvas id="arFurnitureGame" tabindex="0" aria-label="AR Furniture Runner game"></canvas>
+        <button class="game-pause-btn" id="pauseGameBtn" type="button" aria-label="Pause game">Ⅱ PAUSE</button>
+        <div class="game-toast" id="gameToast"></div>
+
+        <div class="game-overlay" id="gameStartOverlay">
+          <div class="game-overlay-box">
+            <h3>AR Furniture Runner</h3>
+            <p>🪚 Cutter Machine, Sofa, Bed, Door और Workshop obstacles से बचो। Tap / Space / ↑ से jump करो। ⏸ PAUSE से pause कर सकते हो और browser Back या tab छोड़ते ही game over हो जाएगा।</p>
+            <div class="game-actions">
+              <button class="game-btn" id="startGameBtn" type="button">▶ START GAME</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="live-reward hidden" id="liveReward">
+  <div class="live-reward-kicker">CONGRATULATIONS!</div>
+  <div class="live-reward-shop">AR FURNITURE SUKLI LORMI</div>
+  <div class="live-reward-main" id="liveRewardMain">1% DISCOUNT UNLOCKED</div>
+  <div class="live-reward-score" id="liveRewardScore">Score: 5,000</div>
+  <div class="live-reward-note">Game जारी है — खेलते रहें!</div>
+</div>
+<div class="game-overlay hidden" id="gameOverOverlay">
+          <div class="game-overlay-box">
+            <div class="reward-banner hidden" id="rewardBanner">
+              <div class="reward-kicker">CONGRATULATIONS!</div>
+              <div class="reward-shop">AR FURNITURE SUKLI LORMI</div>
+              <div class="reward-main" id="rewardMain">1% DISCOUNT UNLOCKED</div>
+              <div class="reward-score" id="rewardScore">Score: 5,000</div>
+              <div class="reward-note">इस स्क्रीन को दुकान पर दिखाएँ</div>
+            </div>
+            <h3 id="gameOverTitle">GAME OVER</h3>
+            <p id="gameOverText">एक और कोशिश करो।</p>
+            <div class="game-actions">
+              <button class="game-btn" id="restartGameBtn" type="button">↻ PLAY AGAIN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-rewards">
+        <div class="game-reward">
+          <span>🎁 FIRST REWARD</span>
+          <b>5,000 → 1% OFF</b>
+        </div>
+        <div class="game-reward">
+          <span>🏆 MAXIMUM REWARD</span>
+          <b>10,000 → 2% OFF</b>
+        </div>
+      </div>
+      <div class="game-note">🛠️ Obstacles: Cutter • Sofa • Bed • Door • Table • Wood • Box • Chair<br>Minimum eligible purchase ₹2,000 • Reward के लिए score पूरा करना जरूरी है • Discount shop पर score verification के बाद लागू होगा • 10,000 पर maximum 2% OFF</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container"><div class="footer-brand">AR FURNITURE SUKLI LORMI</div><div>© 2026 AR FURNITURE. All Rights Reserved.</div></div>
+</footer>
+
+<script>
+/* === AR FURNITURE RUNNER — original lightweight Canvas game === */
+(function(){
+  const canvas = document.getElementById('arFurnitureGame');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const stage = document.getElementById('gameStage');
+  const scoreEl = document.getElementById('gameScore');
+  const bestEl = document.getElementById('gameBest');
+  const nextRewardEl = document.getElementById('nextReward');
+  const startOverlay = document.getElementById('gameStartOverlay');
+  const overOverlay = document.getElementById('gameOverOverlay');
+  const overTitle = document.getElementById('gameOverTitle');
+  const overText = document.getElementById('gameOverText');
+  const rewardBanner = document.getElementById('rewardBanner');
+  const rewardMain = document.getElementById('rewardMain');
+  const rewardScore = document.getElementById('rewardScore');
+  const liveReward = document.getElementById('liveReward');
+  const liveRewardMain = document.getElementById('liveRewardMain');
+  const liveRewardScore = document.getElementById('liveRewardScore');
+  let reward5Shown=false, reward10Shown=false, liveRewardTimer=0;
+  const toast = document.getElementById('gameToast');
+  const startBtn = document.getElementById('startGameBtn');
+  const restartBtn = document.getElementById('restartGameBtn');
+  const pauseBtn = document.getElementById('pauseGameBtn');
+
+  let W=900,H=395,dpr=1,raf=0,last=0,score=0,scoreF=0,best=Number(localStorage.getItem('arFurnitureRunnerBest')||0);
+  let running=false,gameOver=false,paused=false,ground=320,spawnTimer=0,flash=0;
+  let audioCtx=null;
+  let speed=5.2, world=0, reward5=false, reward10=false;
+  const player={x:92,y:0,w:34,h:48,vy:0,onGround:true};
+  let obstacles=[],dust=[];
+
+  bestEl.textContent=String(best).padStart(5,'0'); bestEl.classList.remove('new-best'); void bestEl.offsetWidth; bestEl.classList.add('new-best');
+
+  function resize(){
+    const r=stage.getBoundingClientRect();
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    W=Math.max(320,Math.round(r.width));
+    H=Math.max(230,Math.round(Math.min(300, W/1.9)));
+    canvas.style.height=H+'px'; canvas.style.touchAction='none'; canvas.style.userSelect='none';
+    canvas.width=Math.round(W*dpr); canvas.height=Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ground=H-54;
+    player.x=Math.max(55,Math.min(105,W*.12));
+    if(!running || paused){player.y=Math.min(player.y,ground-player.h); if(!running) player.y=ground-player.h;}
+  }
+  new ResizeObserver(resize).observe(canvas);
+
+  function difficulty(){
+    // Smooth full-game acceleration: score rate and movement speed both rise
+    // from 0 through 10,000+, with no sudden jump at a reward milestone.
+    const MAX=16;
+    if(score<2000) return 5.2 + score*0.00055;
+    if(score<5000) return 6.3 + (score-2000)*0.00095;
+    if(score<10000) return 9.15 + (score-5000)*0.00115;
+    return Math.min(MAX,14.9 + (score-10000)*0.00022);
+  }
+
+  function spawnGap(){
+    // Gap between obstacle groups — shrinks gently; clusters add the real challenge.
+    return Math.max(560, 1250 - Math.min(560, score*0.05));
+  }
+
+  function setScore(n){
+    scoreF=Math.max(0,n);          // running total keeps the fraction — and can never go negative
+    score=Math.floor(scoreF);      // only the display/logic value is rounded
+    scoreEl.textContent=String(score).padStart(5,'0');
+    const next=score<5000?'5,000 → 1% OFF':score<10000?'10,000 → 2% OFF':'MAXIMUM 2% UNLOCKED';
+    nextRewardEl.textContent=next;
+    if(score>=5000 && !reward5){
+      reward5=true; flash=1;
+      showLiveReward(1,5000);
+    }
+    if(score>=10000 && !reward10){
+      reward10=true; flash=1;
+      showLiveReward(2,10000);
+    }
+  }
+
+  function showToast(msg){
+    toast.textContent=msg; toast.classList.add('show');
+    clearTimeout(showToast.t);
+    showToast.t=setTimeout(()=>toast.classList.remove('show'),2600);
+  }
+
+  function reset(){
+    score=0;scoreF=0;world=0;spawnTimer=0;flash=0;
+    obstacles=[];dust=[];reward5=false;reward10=false;
+    player.vy=0;player.onGround=true;player.y=ground-player.h;
+    setScore(0);
+  }
+
+  function ensureAudio(){
+    if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();}
+    if(audioCtx.state==='suspended') audioCtx.resume();
+  }
+  function sfx(kind){
+    try{
+      ensureAudio();
+      const now=audioCtx.currentTime;
+      const play=(freq,dur,type='sine',vol=.045,endFreq=null,delay=0)=>{
+        const o=audioCtx.createOscillator(), g=audioCtx.createGain();
+        o.type=type; o.frequency.setValueAtTime(freq,now+delay);
+        if(endFreq) o.frequency.exponentialRampToValueAtTime(endFreq,now+delay+dur);
+        g.gain.setValueAtTime(.0001,now+delay);
+        g.gain.exponentialRampToValueAtTime(vol,now+delay+.012);
+        g.gain.exponentialRampToValueAtTime(.0001,now+delay+dur);
+        o.connect(g);g.connect(audioCtx.destination);o.start(now+delay);o.stop(now+delay+dur+.02);
+      };
+      if(kind==='jump'){
+        play(480,.08,'square',.035,720,0);
+        play(720,.07,'sine',.022,920,.045);
+      }else if(kind==='hit'){
+        play(180,.14,'sawtooth',.055,70,0);
+        play(95,.20,'square',.032,45,.07);
+      }else if(kind==='reward'){
+        play(620,.08,'sine',.035,820,0);
+        play(820,.08,'sine',.035,1040,.09);
+        play(1040,.14,'sine',.04,1320,.18);
+      }else if(kind==='pause'){
+        play(360,.07,'triangle',.025,300,0);
+      }
+    }catch(e){}
+  }
+
+  function start(){
+    ensureAudio(); reset(); running=true;gameOver=false;paused=false;
+    rewardBanner.classList.add('hidden'); liveReward.classList.add('hidden'); reward5Shown=false; reward10Shown=false; liveRewardTimer=0;
+    startOverlay.classList.add('hidden');overOverlay.classList.add('hidden');
+    pauseBtn.classList.add('show'); pauseBtn.textContent='Ⅱ PAUSE'; pauseBtn.setAttribute('aria-label','Pause game');
+    history.pushState({arFurnitureRunner:true},'',location.href);
+    canvas.focus();
+    last=performance.now(); cancelAnimationFrame(raf); raf=requestAnimationFrame(loop);
+  }
+
+
+  function showLiveReward(percent, milestone){
+    ensureAudio();
+    sfx('reward');
+    liveRewardMain.textContent=percent+'% DISCOUNT UNLOCKED';
+    liveRewardScore.textContent='Score: '+milestone.toLocaleString('en-IN');
+    liveReward.classList.remove('hidden');
+    liveRewardTimer=180; // about 3 seconds at 60fps
+  }
+
+  function endGame(reason){
+    if(gameOver) return;
+    running=false;gameOver=true;paused=false;
+    pauseBtn.classList.remove('show');
+    sfx('hit');
+    if(reason==='back'){
+      history.replaceState({arFurnitureRunnerOver:true},'',location.href);
+    }
+    const final=score;
+    if(final>best){
+      best=final;
+      localStorage.setItem('arFurnitureRunnerBest',String(best));
+      bestEl.textContent=String(best).padStart(5,'0');
+    }
+    rewardBanner.classList.add('hidden');
+    overTitle.textContent='GAME OVER';
+    overText.textContent='Score '+final+'। अगली कोशिश में reward तक पहुँचो!';
+    overOverlay.classList.remove('hidden');
+  }
+
+  function jump(){
+    if(!running) return;
+    if(player.onGround){
+      player.vy=-13.3-Math.min(1.7,score/7000);
+      player.onGround=false;
+      sfx('jump');
+      for(let i=0;i<5;i++) dust.push({x:player.x+8,y:ground-2,vx:(Math.random()-.5)*1.8,vy:-Math.random()*2.2,a:1});
+    }
+  }
+
+  function makeObstacleAt(xPos,scale){
+    const roll=Math.random();
+    if(roll<.20) return {type:'cutter',x:xPos,y:ground-50,w:42*scale,h:50*scale,phase:Math.random()*6};
+    if(roll<.34) return {type:'sofa',x:xPos,y:ground-43,w:58*scale,h:43*scale};
+    if(roll<.47) return {type:'bed',x:xPos,y:ground-46,w:62*scale,h:46*scale};
+    if(roll<.59){ const ds=Math.min(scale,1.16); return {type:'door',x:xPos,y:ground-70*ds,w:42*ds,h:70*ds}; }
+    if(roll<.70) return {type:'table',x:xPos,y:ground-45,w:52*scale,h:45*scale};
+    if(roll<.80) return {type:'wood',x:xPos,y:ground-28,w:38*scale,h:28*scale};
+    if(roll<.90) return {type:'box',x:xPos,y:ground-35,w:36*scale,h:35*scale};
+    return {type:'chair',x:xPos,y:ground-48,w:43*scale,h:48*scale};
+  }
+
+  function addObstacle(){
+    const scale=1+Math.min(.35,score/18000);
+    // Chrome-Dino style obstacle trains: sometimes 2-4 obstacles arrive
+    // together with just enough gap to clear each one, instead of the
+    // difficulty coming from ever-rising speed.
+    const clusterChance = score<1200?0:score<2000?0.14:score<5000?0.26:score<8000?0.38:0.50;
+    const maxCluster = score<5000?2:score<8000?3:4;
+    const clusterSize = Math.random()<clusterChance ? 2+Math.floor(Math.random()*(maxCluster-1)) : 1;
+    let x=W+35;
+    for(let i=0;i<clusterSize;i++){
+      const o=makeObstacleAt(x,scale);
+      obstacles.push(o);
+      x+=o.w+58+Math.random()*36;
+    }
+  }
+
+  function hit(a,b){
+    // Size-aware padding keeps small objects fair and large objects precise.
+    const pad=Math.max(3,Math.min(8,Math.min(b.w,b.h)*0.12));
+    const ax=a.x+5, ay=a.y+5, aw=a.w-10, ah=a.h-6;
+    return ax < b.x+b.w-pad && ax+aw > b.x+pad && ay < b.y+b.h-pad && ay+ah > b.y+pad;
+  }
+
+  function palette(){
+    if(score<500) return {sky:'#32172e',far:'#51263f',ground:'#d7ad57',line:'#6e3b54',accent:'#e7c878'};
+    if(score<2000) return {sky:'#2d2140',far:'#68405c',ground:'#d7ad57',line:'#876d73',accent:'#f0d58c'};
+    if(score<5000) return {sky:'#263a50',far:'#48657b',ground:'#d9b65e',line:'#7392a5',accent:'#f4d67e'};
+    if(score<10000) return {sky:'#183d46',far:'#347064',ground:'#e1b95c',line:'#6eb4a1',accent:'#ffe08b'};
+    return {sky:'#352052',far:'#70447e',ground:'#e3b85a',line:'#aa79a4',accent:'#ffe29a'};
+  }
+
+  function drawBackground(){
+    const p=palette();
+    // Premium layered workshop backdrop: subtle depth, beams, windows, lamps,
+    // furniture silhouettes and a clean floor. Palette still evolves with score.
+    ctx.fillStyle=p.sky;ctx.fillRect(0,0,W,H);
+    const grad=ctx.createLinearGradient(0,0,0,H);
+    grad.addColorStop(0,'rgba(255,255,255,.11)');
+    grad.addColorStop(.52,'rgba(255,255,255,.025)');
+    grad.addColorStop(1,'rgba(0,0,0,.18)');
+    ctx.fillStyle=grad;ctx.fillRect(0,0,W,H);
+
+    const farOffset=-(world*.055%260);
+    const midOffset=-(world*.12%180);
+
+    // High workshop ceiling beams — slow parallax.
+    ctx.fillStyle='rgba(0,0,0,.12)';
+    for(let x=farOffset-260;x<W+260;x+=260){
+      ctx.fillRect(x,18,105,9);
+      ctx.fillRect(x+72,27,10,ground-115);
+    }
+
+    // Glowing clerestory windows / workshop panels.
+    for(let x=farOffset-260;x<W+260;x+=260){
+      ctx.fillStyle='rgba(255,238,185,.075)';
+      ctx.fillRect(x+118,42,94,54);
+      ctx.strokeStyle='rgba(255,240,190,.13)';ctx.lineWidth=2;
+      ctx.strokeRect(x+118,42,94,54);
+      ctx.beginPath();ctx.moveTo(x+165,42);ctx.lineTo(x+165,96);ctx.moveTo(x+118,69);ctx.lineTo(x+212,69);ctx.stroke();
+    }
+
+    // Distant workshop buildings and furniture silhouettes.
+    ctx.fillStyle=p.far;
+    for(let x=midOffset-180;x<W+180;x+=180){
+      ctx.fillRect(x,ground-105,105,105);
+      ctx.fillRect(x+18,ground-145,65,40);
+      ctx.fillRect(x+34,ground-128,30,23);
+      // shelf + small cabinet
+      ctx.fillRect(x+8,ground-82,89,5);
+      ctx.fillRect(x+15,ground-77,7,37);
+      ctx.fillRect(x+83,ground-77,7,37);
+      // tiny sofa silhouette
+      ctx.fillRect(x+108,ground-55,47,10);
+      ctx.fillRect(x+114,ground-69,35,15);
+      ctx.fillRect(x+112,ground-45,6,20);ctx.fillRect(x+145,ground-45,6,20);
+    }
+
+    // Roof/saw accents with subtle parallax.
+    ctx.strokeStyle='rgba(255,255,255,.085)';ctx.lineWidth=2;
+    for(let x=midOffset;x<W+180;x+=90){
+      ctx.beginPath();ctx.moveTo(x,ground-72);ctx.lineTo(x+35,ground-100);ctx.lineTo(x+70,ground-72);ctx.stroke();
+    }
+
+    // Hanging industrial lamps and soft light pools.
+    const lampOffset=-(world*.04%320);
+    for(let x=lampOffset-320;x<W+320;x+=320){
+      ctx.strokeStyle='rgba(255,255,255,.13)';ctx.lineWidth=2;
+      ctx.beginPath();ctx.moveTo(x+250,26);ctx.lineTo(x+250,51);ctx.stroke();
+      ctx.fillStyle='rgba(255,226,154,.20)';ctx.beginPath();ctx.arc(x+250,55,5,0,Math.PI*2);ctx.fill();
+      const glow=ctx.createRadialGradient(x+250,61,2,x+250,61,48);
+      glow.addColorStop(0,'rgba(255,226,154,.10)');glow.addColorStop(1,'rgba(255,226,154,0)');
+      ctx.fillStyle=glow;ctx.beginPath();ctx.arc(x+250,61,48,0,Math.PI*2);ctx.fill();
+    }
+
+    // Ground with premium two-tone workshop floor.
+    ctx.fillStyle=p.ground;ctx.fillRect(0,ground,W,H-ground);
+    ctx.fillStyle='rgba(36,17,38,.10)';ctx.fillRect(0,ground,W,8);
+    const stripe=-(world%54);
+    for(let x=stripe;x<W+54;x+=54){
+      ctx.fillStyle=p.line;ctx.fillRect(x,ground+15,28,3);
+      ctx.fillStyle='rgba(255,255,255,.10)';ctx.fillRect(x+28,ground+18,22,2);
+    }
+
+    // Foreground floor seams add depth without distracting from obstacles.
+    ctx.strokeStyle='rgba(36,17,38,.12)';ctx.lineWidth=1;
+    const seam=-(world*.45%110);
+    for(let x=seam-110;x<W+110;x+=110){
+      ctx.beginPath();ctx.moveTo(x,ground+2);ctx.lineTo(x-28,H);ctx.stroke();
+    }
+
+    // Subtle vignette keeps the runner and obstacles visually dominant.
+    const vignette=ctx.createRadialGradient(W*.5,ground*.48,Math.min(W,H)*.16,W*.5,ground*.48,Math.max(W,H)*.72);
+    vignette.addColorStop(0,'rgba(0,0,0,0)');vignette.addColorStop(1,'rgba(0,0,0,.20)');
+    ctx.fillStyle=vignette;ctx.fillRect(0,0,W,H);
+  }
+
+  function drawPlayer(){
+    const x=player.x,y=player.y;
+    ctx.save();
+    ctx.translate(x,y);
+
+    const run=Math.sin(world*.105);
+    const run2=Math.sin(world*.105+Math.PI);
+    const bob=player.onGround ? Math.abs(run)*1.8 : 0;
+    ctx.translate(0,-bob);
+
+    // Soft ground shadow
+    ctx.fillStyle='rgba(0,0,0,.20)';
+    ctx.beginPath();ctx.ellipse(19,player.h+4,18,4,0,0,Math.PI*2);ctx.fill();
+
+    // Motion streaks stay subtle so the character remains readable.
+    if(speed>8){
+      const alpha=Math.min(.28,(speed-8)/24);
+      ctx.strokeStyle='rgba(255,232,157,'+alpha+')';
+      ctx.lineWidth=2;ctx.lineCap='round';
+      for(let i=0;i<2;i++){
+        const ly=17+i*9;
+        ctx.beginPath();ctx.moveTo(-2-i*3,ly);ctx.lineTo(-10-i*6,ly);ctx.stroke();
+      }
+    }
+
+    // Legs + shoes
+    ctx.strokeStyle='#2b1726';ctx.lineWidth=6;ctx.lineCap='round';
+    ctx.beginPath();
+    ctx.moveTo(14,38);ctx.lineTo(10+run*5,49);
+    ctx.moveTo(25,38);ctx.lineTo(30+run2*5,49);
+    ctx.stroke();
+
+    ctx.fillStyle='#d7ad57';
+    ctx.beginPath();ctx.ellipse(9+run*5,50,6,3,0,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.ellipse(31+run2*5,50,6,3,0,0,Math.PI*2);ctx.fill();
+
+    // Shirt / apron
+    ctx.fillStyle='#c99f54';
+    ctx.beginPath();ctx.roundRect(8,18,22,22,3);ctx.fill();
+    ctx.fillStyle='#553046';
+    ctx.beginPath();ctx.roundRect(12,20,14,20,2);ctx.fill();
+    ctx.strokeStyle='rgba(255,232,157,.65)';ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(19,21);ctx.lineTo(19,39);ctx.stroke();
+
+    // Neck
+    ctx.fillStyle='#c88761';
+    ctx.fillRect(16,14,7,6);
+
+    // Arms with hands
+    ctx.strokeStyle='#d99a70';ctx.lineWidth=5;ctx.lineCap='round';
+    ctx.beginPath();
+    ctx.moveTo(9,22);ctx.lineTo(3+run2*3,30+run*2);
+    ctx.moveTo(29,22);ctx.lineTo(36+run*3,27+run2*2);
+    ctx.stroke();
+
+    ctx.fillStyle='#d99a70';
+    ctx.beginPath();ctx.arc(3+run2*3,30+run*2,2.7,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(36+run*3,27+run2*2,2.7,0,Math.PI*2);ctx.fill();
+
+    // Head — clean, simple human face; no cap/hat.
+    ctx.fillStyle='#d99a70';
+    ctx.beginPath();ctx.arc(19,10.8,10.7,0,Math.PI*2);ctx.fill();
+
+    // Ears
+    ctx.fillStyle='#c88761';
+    ctx.beginPath();ctx.arc(8.7,11.5,2.4,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(29.3,11.5,2.4,0,Math.PI*2);ctx.fill();
+
+    // Natural short hair — no hat.
+    ctx.fillStyle='#241126';
+    ctx.beginPath();ctx.arc(19,7.2,9.9,Math.PI,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.moveTo(9.5,8);ctx.quadraticCurveTo(12,2.8,19,3);
+    ctx.quadraticCurveTo(26,2.8,28.5,8);ctx.lineTo(26.5,9.2);
+    ctx.quadraticCurveTo(23,6.2,19,7.2);ctx.quadraticCurveTo(15,6.2,11.5,9.2);ctx.closePath();ctx.fill();
+
+    // Eyes, eyebrows, nose and small smile
+    ctx.strokeStyle='#241126';ctx.lineWidth=1.4;ctx.lineCap='round';
+    ctx.beginPath();ctx.moveTo(14,9);ctx.lineTo(17,8.5);ctx.moveTo(21,8.5);ctx.lineTo(24,9);ctx.stroke();
+
+    ctx.fillStyle='#241126';
+    ctx.beginPath();ctx.arc(15.7,11.2,1.25,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(22.3,11.2,1.25,0,Math.PI*2);ctx.fill();
+
+    ctx.strokeStyle='#9a604e';ctx.lineWidth=1.2;
+    ctx.beginPath();ctx.moveTo(19,11);ctx.lineTo(19,14.1);ctx.stroke();
+
+    ctx.beginPath();ctx.arc(19,14.4,2.7,.15,Math.PI-.15);ctx.stroke();
+
+    // Small workshop tool in the forward hand
+    ctx.strokeStyle='#d7ad57';ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(35+run*3,27+run2*2);ctx.lineTo(40+run*3,21+run2*2);ctx.stroke();
+
+    ctx.restore();
+  }
+
+  function drawObstacle(o){
+    const x=o.x,y=o.y,w=o.w,h=o.h;
+    ctx.save();
+    if(o.type==='cutter'){
+      const cx=x+w/2, tableY=y+h*.42, bladeR=Math.min(15,w*.36);
+      // motor housing (base box on the floor)
+      ctx.fillStyle='#3a2430';ctx.fillRect(x+4,tableY+7,w-8,(y+h)-(tableY+7)-2);
+      // black/gold hazard stripe on the housing
+      ctx.save();
+      ctx.beginPath();ctx.rect(x+4,tableY+7,w-8,6);ctx.clip();
+      ctx.fillStyle='#d7ad57';
+      for(let sx=x-6;sx<x+w+12;sx+=7){ctx.save();ctx.translate(sx,tableY+7);ctx.rotate(Math.PI/4);ctx.fillRect(0,-4,3,16);ctx.restore();}
+      ctx.restore();
+      // vent slits + power light on the motor
+      ctx.strokeStyle='#241126';ctx.lineWidth=1;
+      for(let i=0;i<3;i++){ctx.beginPath();ctx.moveTo(x+8,tableY+18+i*4);ctx.lineTo(x+w-8,tableY+18+i*4);ctx.stroke();}
+      ctx.fillStyle=speed>10?'#ff6b57':'#8f6c78';ctx.beginPath();ctx.arc(x+w-9,tableY+14,2,0,Math.PI*2);ctx.fill();
+      // short legs
+      ctx.fillStyle='#241126';ctx.fillRect(x+6,y+h-5,4,5);ctx.fillRect(x+w-10,y+h-5,4,5);
+      // tabletop slab (blade pokes up through this)
+      ctx.fillStyle='#c7c2c4';ctx.fillRect(x,tableY,w,7);
+      ctx.fillStyle='#8f8a8d';ctx.fillRect(x,tableY+5,w,2);
+      ctx.fillStyle='#241126';ctx.beginPath();ctx.ellipse(cx,tableY+1,bladeR*.5,2.5,0,0,Math.PI*2);ctx.fill();
+      // spinning toothed blade — clipped so only the part above the table shows
+      ctx.save();
+      ctx.beginPath();ctx.rect(x-2,y-2,w+4,tableY-y+3);ctx.clip();
+      ctx.translate(cx,tableY);
+      const a=world*.28+(o.phase||0);
+      ctx.rotate(a);
+      ctx.fillStyle='#d7dde0';ctx.beginPath();ctx.arc(0,0,bladeR,0,Math.PI*2);ctx.fill();
+      ctx.strokeStyle='#5f666b';ctx.lineWidth=1;ctx.stroke();
+      ctx.fillStyle='#8b9297';
+      for(let i=0;i<12;i++){ctx.save();ctx.rotate(i*Math.PI/6);ctx.beginPath();ctx.moveTo(bladeR-1,-1.6);ctx.lineTo(bladeR+2.6,0);ctx.lineTo(bladeR-1,1.6);ctx.closePath();ctx.fill();ctx.restore();}
+      ctx.fillStyle='#3a2430';ctx.beginPath();ctx.arc(0,0,3,0,Math.PI*2);ctx.fill();
+      ctx.restore();
+      if(speed>10){
+        ctx.fillStyle='rgba(255,224,139,'+Math.min(.9,(speed-10)/15)+')';
+        for(let i=0;i<3;i++){
+          const sx=cx+(Math.random()-.5)*bladeR*1.6, sy=tableY-Math.random()*7;
+          ctx.fillRect(sx,sy,2,2);
+        }
+      }
+    }else if(o.type==='sofa'){
+      ctx.fillStyle='#6d3048';ctx.fillRect(x+6,y+7,w-12,18);
+      ctx.fillStyle='#8e4b61';ctx.fillRect(x+10,y+20,w-20,15);
+      ctx.fillStyle='#c99a57';ctx.fillRect(x+8,y+31,w-16,7);
+      ctx.fillStyle='#4a2435';ctx.fillRect(x,y+12,9,25);ctx.fillRect(x+w-9,y+12,9,25);
+      ctx.fillStyle='#241126';ctx.fillRect(x+8,y+h-5,5,5);ctx.fillRect(x+w-13,y+h-5,5,5);
+      ctx.strokeStyle='rgba(255,224,139,.45)';ctx.lineWidth=1.5;ctx.strokeRect(x+10,y+9,w-20,11);
+
+    }else if(o.type==='bed'){
+      ctx.fillStyle='#70402f';ctx.fillRect(x,y+10,w,8);
+      ctx.fillStyle='#9d6848';ctx.fillRect(x+5,y+17,w-10,h-17);
+      ctx.fillStyle='#eee0ca';ctx.fillRect(x+9,y+20,w-18,14);
+      ctx.fillStyle='#c9a66b';ctx.fillRect(x+9,y+20,w-18,4);
+      ctx.fillStyle='#5a3031';ctx.fillRect(x+3,y,w-6,12);
+      ctx.fillStyle='#241126';ctx.fillRect(x+5,y+h-4,5,4);ctx.fillRect(x+w-10,y+h-4,5,4);
+
+    }else if(o.type==='door'){
+      ctx.fillStyle='#5a3031';ctx.fillRect(x,y,w,h);
+      ctx.fillStyle='#a8734c';ctx.fillRect(x+4,y+4,w-8,h-8);
+      ctx.strokeStyle='#d7ad57';ctx.lineWidth=2;ctx.strokeRect(x+8,y+9,w-16,h-22);
+      ctx.strokeRect(x+8,y+h*.52,w-16,h*.30);
+      ctx.fillStyle='#e0bd70';ctx.beginPath();ctx.arc(x+w-10,y+h*.54,2,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle='#241126';ctx.fillRect(x-3,y+h-4,w+6,4);
+
+    }else if(o.type==='table'){
+      ctx.fillStyle='#b47b4d';ctx.fillRect(x,y+5,w,8);
+      ctx.fillStyle='#d0a06a';ctx.fillRect(x+4,y+13,w-8,7);
+      ctx.strokeStyle='#5a3031';ctx.lineWidth=5;ctx.lineCap='round';
+      ctx.beginPath();ctx.moveTo(x+7,y+19);ctx.lineTo(x+5,y+h);ctx.moveTo(x+w-7,y+19);ctx.lineTo(x+w-5,y+h);ctx.stroke();
+      ctx.fillStyle='#241126';ctx.fillRect(x+2,y+h-3,8,3);ctx.fillRect(x+w-10,y+h-3,8,3);
+
+    }else if(o.type==='wood'){
+      ctx.fillStyle='#a8794c';ctx.fillRect(x,y+5,w,h-5);
+      ctx.fillStyle='#6f4a39';ctx.beginPath();ctx.ellipse(x+w*.65,y+h*.45,w*.18,h*.18,0,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle='#d5ad72';ctx.fillRect(x+4,y+8,w-8,4);
+    }else if(o.type==='box'){
+      ctx.fillStyle='#b9834f';ctx.fillRect(x,y,w,h);
+      ctx.strokeStyle='#6f4a39';ctx.lineWidth=2;ctx.strokeRect(x+1,y+1,w-2,h-2);
+      ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+w,y+h);ctx.moveTo(x+w,y);ctx.lineTo(x,y+h);ctx.stroke();
+    }else{
+      ctx.strokeStyle='#d7ad57';ctx.lineWidth=5;ctx.lineCap='round';
+      ctx.beginPath();ctx.moveTo(x+8,y+8);ctx.lineTo(x+w-7,y+8);ctx.moveTo(x+10,y+10);ctx.lineTo(x+5,y+h);ctx.moveTo(x+w-9,y+10);ctx.lineTo(x+w-4,y+h);ctx.stroke();
+      ctx.fillStyle='#5c3044';ctx.fillRect(x+7,y+5,w-14,8);
+      ctx.fillStyle='#c49a5c';ctx.fillRect(x+10,y+h-6,w-20,6);
+    }
+    ctx.restore();
+  }
+
+  function drawFallback(){
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle='#2d1730';ctx.fillRect(0,0,W,H);
+    ctx.fillStyle='#6b3f57';ctx.fillRect(0,42,W,ground-42);
+    ctx.fillStyle='#d3ad60';ctx.fillRect(0,ground,W,H-ground);
+    ctx.fillStyle='rgba(255,255,255,.12)';
+    for(let x=30-(world*.08%180);x<W+180;x+=180){ctx.fillRect(x,18,90,34);ctx.fillRect(x+43,18,3,34);}
+    ctx.fillStyle='#c99a57';ctx.fillRect(10,ground-35,55,10);ctx.fillRect(20,ground-25,35,7);
+    ctx.fillStyle='#241126';ctx.fillRect(22,ground-18,5,18);ctx.fillRect(48,ground-18,5,18);
+    ctx.fillStyle='#d99a70';ctx.beginPath();ctx.arc(player.x+18,player.y+11,10,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#241126';ctx.beginPath();ctx.arc(player.x+18,player.y+7,9,Math.PI,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#553046';ctx.fillRect(player.x+9,player.y+19,20,20);
+    ctx.fillStyle='#241126';ctx.fillRect(player.x+11,player.y+39,6,9);ctx.fillRect(player.x+23,player.y+39,6,9);
+  }
+
+  function draw(){
+    drawBackground();
+    for(const o of obstacles) drawObstacle(o);
+    for(const d of dust){
+      ctx.globalAlpha=d.a;ctx.fillStyle='#f3dca9';ctx.fillRect(d.x,d.y,3,3);ctx.globalAlpha=1;
+    }
+    drawPlayer();
+    if(flash>0){
+      ctx.fillStyle='rgba(255,232,157,.10)';ctx.fillRect(0,0,W,H);flash-=.03;
+    }
+  }
+
+  function update(dt){
+    const frame=Math.max(0,Math.min(2.2,dt/16.67));
+    speed=difficulty();
+    world+=speed*frame;
+    const scoreRate = 0.0150 + Math.min(0.0022, score/2500000);
+    setScore(scoreF + speed*frame*scoreRate);
+    if(liveRewardTimer>0){
+      liveRewardTimer-=frame;
+      if(liveRewardTimer<=0) liveReward.classList.add('hidden');
+    }
+
+    player.vy += .72*frame;
+    player.y += player.vy*frame;
+    if(player.y>=ground-player.h){player.y=ground-player.h;player.vy=0;player.onGround=true;}
+
+    spawnTimer-=dt;
+    if(spawnTimer<=0){
+      addObstacle();
+      const minGap=spawnGap();
+      spawnTimer=minGap + Math.random()*260;
+    }
+
+    for(let i=obstacles.length-1;i>=0;i--){
+      obstacles[i].x-=speed*frame;
+      if(obstacles[i].x+obstacles[i].w<-30) obstacles.splice(i,1);
+      else if(hit(player,obstacles[i])){endGame();return;}
+    }
+
+    for(let i=dust.length-1;i>=0;i--){
+      const d=dust[i];d.x+=d.vx*frame;d.y+=d.vy*frame;d.vy+=.12*frame;d.a-=.035*frame;
+      if(d.a<=0)dust.splice(i,1);
+    }
+  }
+
+  function loop(now){
+    if(!running) return;
+    const dt=Math.max(0,Math.min(34,now-last||16.67));last=now;
+    update(dt);
+    try{draw();}catch(err){drawFallback(err);}
+    if(running) raf=requestAnimationFrame(loop);
+  }
+
+  function pointerAction(e){
+    if(!running || paused) return;
+    if(e.pointerType==='mouse' && e.button!==0) return;
+    e.preventDefault();
+    jump();
+  }
+
+  function togglePause(){
+    if(!running) return;
+    ensureAudio(); sfx('pause');
+    paused=!paused;
+    if(paused){ cancelAnimationFrame(raf); pauseBtn.textContent='▶ RESUME'; pauseBtn.setAttribute('aria-label','Resume game'); showToast('⏸ GAME PAUSED'); }
+    else { last=performance.now(); pauseBtn.textContent='Ⅱ PAUSE'; pauseBtn.setAttribute('aria-label','Pause game'); raf=requestAnimationFrame(loop); }
+  }
+
+  startBtn.addEventListener('click',start);
+  restartBtn.addEventListener('click',start);
+  pauseBtn.addEventListener('click',togglePause);
+  canvas.addEventListener('pointerdown',pointerAction,{passive:false});
+  window.addEventListener('popstate',()=>{ if(running){ endGame('back'); history.pushState({arFurnitureRunnerOver:true},'',location.href); } });
+  document.addEventListener('visibilitychange',()=>{ if(document.hidden && running && !gameOver){ endGame('visibility'); } });
+
+  document.addEventListener('keydown',e=>{
+    if(e.code==='Space'||e.code==='ArrowUp'){
+      e.preventDefault();
+      if(running && !paused) jump();
+      else if(gameOver) start();
+      else start();
+    }
+  });
+  window.addEventListener('resize',resize);
+
+  resize();
+  reset();
+  try{draw();}catch(err){drawFallback(err);}
+})();
+</script>
+
+</body>
+</html>
